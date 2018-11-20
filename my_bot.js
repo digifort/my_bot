@@ -13,10 +13,9 @@ client.on('ready', () => {
         guild.channels.forEach((channel) => {
             console.log(` - ${channel.name} ${channel.type} ${channel.id}`)
         })
-        //General Channel : 513015372883034134
     } )
 
-    let generalChannel = client.channels.get("513015372883034134")
+    let generalChannel = client.channels.get("XXXX")
     const attachment = new Discord.Attachment("https://www.devdungeon.com/sites/all/themes/devdungeon2/logo.png") 
     generalChannel.send(attachment)
 })
@@ -33,7 +32,7 @@ client.on('message', (receivedMessage) => {
     // //     console.log(`${customEmoji.name} ${customEmoji.id}`)
     // //     receivedMessage.react(customEmoji)
     // // })
-    // let customEmoji = receivedMessage.guild.emojis.get("513273821558472704")
+    // let customEmoji = receivedMessage.guild.emojis.get("XXXX")
     // receivedMessage.react(customEmoji)
 
     if(receivedMessage.content.startsWith("!")){
@@ -78,4 +77,4 @@ function multiplyCommand(arguments, receivedMessage){
 
 }
 
-client.login("NTEzMDE2NDQ4NDE1Njk0ODcx.DtB3kw.giI8cEpgvfIlQOerq4kzkS1lBlM")
+client.login("XXXX")
